@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panaderia PanComido</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="nav-bar">
+      <h1><img src="img/prueba.png"></h1>
+      <h1>Pan Comido </h1>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        
+      </ul>
+      <div class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p>Delicias</p>
+      <h2>Sweet Treats, Perfect Eats</h2>
+      <p>Delicias horneadas con amor cada día</p>
+      <a class="btn" href="#productos">Ver productos</a>
+      <a class="btn" href="#compra">Comprar Ahora</a>
+    </div>
+  </header>
+
+  <section id="productos" class="productos">
+    <span id="pedidos"></span>
+    <h2>Top Productos</h2>
+    <div class="grid-productos">
+      <!-- Carta 1: Pan Artesanal -->
+      <div class="card">
+        <img src="img/pan-artesanal.jpg" alt="Pan Artesanal ">
+        <h3>Pan Artesanal</h3>
+        <p>S/4.00</p>
+        <button class="add-to-cart" data-id="1" data-name="Pan Artesanal" data-price="4.00" data-image="img/pan.jpg">
+          Agregar
+        </button>
+      </div>
+
+      <!-- Carta 2: Bizcocho -->
+      <div class="card">
+        <img src="img/bizcocho.jpg" alt="Bizcocho">
+        <h3>Bizcocho</h3>
+        <p>S/10.00</p>
+        <button class="add-to-cart" data-id="2" data-name="Bizcocho" data-price="10.00" data-image="img/bizcocho.jpg">
+          Agregar
+        </button>
+      </div>
+
+      <!-- Carta 3: Pizza Casera -->
+      <div class="card">
+        <img src="img/pizza-casera.jpg" alt="Pizza Casera">
+        <h3>Pizza Casera</h3>
+        <p>S/10.00</p>
+        <button class="add-to-cart" data-id="3" data-name="Pizza Casera" data-price="10.00" data-image="img/pizzascaseras.jpg">
+          Agregar
+        </button>
+      </div>
+
+      <!-- Carta 4: Pionono -->
+      <div class="card">
+        <img src="img/pionono.jpg" alt="Pionono">
+        <h3>Pionono</h3>
+        <p>S/10.00</p>
+        <button class="add-to-cart" data-id="4" data-name="Pionono" data-price="10.00" data-image="img/pionono.jpg">
+          Agregar
+        </button>
+      </div>
+
+      <!-- Carta 5: Pie de Manzana -->
+      <div class="card">
+        <img src="img/piedemanzana.jpg" alt="Pie de Manzana">
+        <h3>Pie de Manzana</h3>
+        <p>S/10.00</p>
+        <button class="add-to-cart" data-id="5" data-name="Pie de Manzana" data-price="10.00" data-image="img/piedemanzana.jpg">
+          Agregar
+        </button>
+      </div>
+
+      <!-- Carta 6: Torta Helada -->
+      <div class="card">
+        <img src="img/tortahelada.jpg" alt="Torta Helada">
+        <h3>Torta Helada</h3>
+        <p>S/10.00</p>
+        <button class="add-to-cart" data-id="6" data-name="Torta Helada" data-price="10.00" data-image="img/tortahelada.jpg">
+          Agregar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="promo">
+    <h2>20% de descuento en tu primer pedido</h2>
+    <p>¡Aprovecha nuestra promoción especial!</p>
+    <a class="btn" href="#pedidos">Pedir ahora</a>
+    <a class="btn" href="#explora">Explora</a>
+  </section>
+  <!-- Sección de compra vinculacion de boton -->
+  <section id="compra" class="explore">
+    <span id="explora"></span>
+    <h2>Escoge</h2>
+    <div class="tabs">
+      <button class="active" data-categoria="todos">Todos</button>
+      <button data-categoria="pan">Panes</button>
+      <button data-categoria="pizzas">Pizzas</button>
+      <button data-categoria="piononos">Piononos</button>
+      <button data-categoria="tortas">Tortas</button>
+      <button data-categoria="pye">Pye</button>
+      <button data-categoria="bizcochos">Bizcochos</button>
+    </div>
+  
+    <!-- Reemplaza la sección del gallery dentro de .explore con esto: -->
+    <div class="gallery">
+      <div class="grid-productos">
+        <!-- Todos (solo 6 cartas de presentación) -->
+
+        
+        <div class="item todos card" data-categoria="pan">        
+          <img src="img/pan.jpg" alt="Pan Artesanal">
+          <h3>Pan's </h3>
+        
+        </div>
+    <!-- -------------------------------------- -->
+
+
+        <div class="item todos card" data-categoria="bizcochos">
+          <img src="img/bizcocho.jpg" alt="Bizcocho">
+          <h3>Bizcocho</h3>
+          
+        </div>
+    
+        <div class="item todos card" data-categoria="pizzas">
+          <img src="img/pizzascaseras.jpg" alt="Pizza Casera">
+          <h3>Pizza</h3>
+          
+        </div>
+    
+        <div class="item todos card" data-categoria="piononos">
+          <img src="img/pionono.jpg" alt="Pionono">
+          <h3>Pionono</h3>
+          
+        </div>
+    
+        <div class="item todos card" data-categoria="pye">
+          <img src="img/piedemanzana.jpg" alt="Pie de Manzana">
+          <h3>Pie's</h3>
+          
+        </div>
+    
+        <div class="item todos card" data-categoria="tortas">
+          <img src="img/tortahelada.jpg" alt="Torta Helada">
+          <h3>Tortas</h3>
+          
+        </div>
+    
+        <!-- Resto de las categorías (mantén todo lo demás igual) -->
+        
+
+  <!--   ------------------------------------------                     -->
+
+    <!-- Panes (5 ejemplos) -->
+    <div class="item pan card">        
+      <img src="img/pan-artesanal.jpg" alt="Pan Artesanal">
+      <h3>Pan Artesanal</h3>
+      <p>S/4.00</p>
+      <button class="add-to-cart" data-id="1">Agregar</button>
+    </div>
+    <!--   ------------------------------------------                     -->
+    <div class="item pan card">
+      <img src="img/pan-integral.jpg" alt="Pan Integral">
+      <h3>Pan Integral</h3>
+      <p>S/5.00</p>
+      <button class="add-to-cart" data-id="7">Agregar</button>
+    </div>
+    <div class="item pan card">
+      <img src="img/pan-ajo.jpg" alt="Pan de Ajo">
+      <h3>Pan de Ajo</h3>
+      <p>S/6.00</p>
+      <button class="add-to-cart" data-id="8">Agregar</button>
+    </div>
+    <div class="item pan card">
+      <img src="img/baguette.jpg" alt="Baguette">
+      <h3>Baguette</h3>
+      <p>S/7.00</p>
+      <button class="add-to-cart" data-id="9">Agregar</button>
+    </div>
+    <div class="item pan card">
+      <img src="img/pan-centeno.jpg" alt="Pan de Centeno">
+      <h3>Pan de Centeno</h3>
+      <p>S/6.50</p>
+      <button class="add-to-cart" data-id="10">Agregar</button>
+    </div>
+
+    <!-- Pizzas (5 ejemplos) -->
+     <!--   ------------------------------------------                     -->
+    <div class="item pizzas card">
+      <img src="img/pizza-casera.jpg" alt="Pizza Casera">
+      <h3>Pizza Casera</h3>
+      <p>S/10.00</p>
+      <button class="add-to-cart" data-id="3">Agregar</button>
+    </div>
+
+    <!--   ------------------------------------------                     -->
+    <div class="item pizzas card">
+      <img src="img/pizza-pepperoni.jpg" alt="Pizza Pepperoni">
+      <h3>Pizza Pepperoni</h3>
+      <p>S/12.00</p>
+      <button class="add-to-cart" data-id="11">Agregar</button>
+    </div>
+    <div class="item pizzas card">
+      <img src="img/pizza-hawaiana.jpg" alt="Pizza Hawaiana">
+      <h3>Pizza Hawaiana</h3>
+      <p>S/12.00</p>
+      <button class="add-to-cart" data-id="12">Agregar</button>
+    </div>
+    <div class="item pizzas card">
+      <img src="img/pizza-vegetariana.jpg" alt="Pizza Vegetariana">
+      <h3>Pizza Vegetariana</h3>
+      <p>S/11.00</p>
+      <button class="add-to-cart" data-id="13">Agregar</button>
+    </div>
+    <div class="item pizzas card">
+      <img src="img/pizza-margarita.jpg" alt="Pizza Margarita">
+      <h3>Pizza Margarita</h3>
+      <p>S/10.50</p>
+      <button class="add-to-cart" data-id="14">Agregar</button>
+    </div>
+
+    <!-- Piononos (5 ejemplos) -->
+     <!--   ------------------------------------------                     -->
+    <div class="item piononos card">
+      <img src="img/pionono.jpg" alt="Pionono Clásico">
+      <h3>Pionono Clásico</h3>
+      <p>S/10.00</p>
+      <button class="add-to-cart" data-id="4">Agregar</button>
+    </div>
+    <!--   ------------------------------------------                     -->
+    <div class="item piononos card">
+      <img src="img/pionono-chocolate.jpg" alt="Pionono de Chocolate">
+      <h3>Pionono Chocolate</h3>
+      <p>S/12.00</p>
+      <button class="add-to-cart" data-id="15">Agregar</button>
+    </div>
+    <div class="item piononos card">
+      <img src="img/pionono-frutas.jpg" alt="Pionono de Frutas">
+      <h3>Pionono de Frutas</h3>
+      <p>S/12.00</p>
+      <button class="add-to-cart" data-id="16">Agregar</button>
+    </div>
+    <div class="item piononos card">
+      <img src="img/pionono-dulce-leche.jpg" alt="Pionono Dulce de Leche">
+      <h3>Pionono Dulce de Leche</h3>
+      <p>S/11.00</p>
+      <button class="add-to-cart" data-id="17">Agregar</button>
+    </div>
+    <div class="item piononos card">
+      <img src="img/pionono-crema.jpg" alt="Pionono de Crema">
+      <h3>Pionono de Crema</h3>
+      <p>S/10.50</p>
+      <button class="add-to-cart" data-id="18">Agregar</button>
+    </div>
+
+    <!-- Tortas (5 ejemplos) -->
+     <!--   ------------------------------------------                     -->
+    <div class="item tortas card">
+      <img src="img/tortahelada.jpg" alt="Torta Helada">
+      <h3>Torta Helada</h3>
+      <p>S/10.00</p>
+      <button class="add-to-cart" data-id="6">Agregar</button>
+    </div>
+    <!--   ------------------------------------------                     -->
+    <div class="item tortas card">
+      <img src="img/torta-chocolate.jpg" alt="Torta de Chocolate">
+      <h3>Torta de Chocolate</h3>
+      <p>S/15.00</p>
+      <button class="add-to-cart" data-id="19">Agregar</button>
+    </div>
+    <div class="item tortas card">
+      <img src="img/torta-tres-leches.jpg" alt="Torta Tres Leches">
+      <h3>Torta Tres Leches</h3>
+      <p>S/16.00</p>
+      <button class="add-to-cart" data-id="20">Agregar</button>
+    </div>
+    <div class="item tortas card">
+      <img src="img/torta-red-velvet.jpg" alt="Torta Red Velvet">
+      <h3>Torta Red Velvet</h3>
+      <p>S/18.00</p>
+      <button class="add-to-cart" data-id="21">Agregar</button>
+    </div>
+    <div class="item tortas card">
+      <img src="img/torta-cheesecake.jpg" alt="Cheesecake">
+      <h3>Cheesecake</h3>
+      <p>S/17.00</p>
+      <button class="add-to-cart" data-id="22">Agregar</button>
+    </div>
+
+    <!-- Pyes (5 ejemplos) -->
+     <!--   ------------------------------------------                     -->
+    <div class="item pye card">
+      <img src="img/piedemanzana.jpg" alt="Pie de Manzana">
+      <h3>Pie de Manzana</h3>
+      <p>S/10.00</p>
+      <button class="add-to-cart" data-id="5">Agregar</button>
+    </div>
+    <!--   ------------------------------------------                     -->
+    <div class="item pye card">
+      <img src="img/pie-cereza.jpg" alt="Pie de Cereza">
+      <h3>Pie de Cereza</h3>
+      <p>S/12.00</p>
+      <button class="add-to-cart" data-id="23">Agregar</button>
+    </div>
+    <div class="item pye card">
+      <img src="img/pie-limon.jpg" alt="Pie de Limón">
+      <h3>Pie de Limón</h3>
+      <p>S/11.00</p>
+      <button class="add-to-cart" data-id="24">Agregar</button>
+    </div>
+    <div class="item pye card">
+      <img src="img/pie-calabaza.jpg" alt="Pie de Calabaza">
+      <h3>Pie de Calabaza</h3>
+      <p>S/12.00</p>
+      <button class="add-to-cart" data-id="25">Agregar</button>
+    </div>
+    <div class="item pye card">
+      <img src="img/pie-queso.jpg" alt="Pie de Queso">
+      <h3>Pie de Queso</h3>
+      <p>S/13.00</p>
+      <button class="add-to-cart" data-id="26">Agregar</button>
+    </div>
+
+    <!-- Bizcochos (5 ejemplos) -->
+     <!--   ------------------------------------------                     -->
+    <div class="item bizcochos card">
+      <img src="img/bizcocho.jpg" alt="Bizcocho Clásico">
+      <h3>Bizcocho Clásico</h3>
+      <p>S/10.00</p>
+      <button class="add-to-cart" data-id="2">Agregar</button>
+    </div>
+    <!--   ------------------------------------------                     -->
+    <div class="item bizcochos card">
+      <img src="img/bizcocho-vainilla.jpg" alt="Bizcocho de Vainilla">
+      <h3>Bizcocho de Vainilla</h3>
+      <p>S/11.00</p>
+      <button class="add-to-cart" data-id="27">Agregar</button>
+    </div>
+    <div class="item bizcochos card">
+      <img src="img/bizcocho-chocolate.jpg" alt="Bizcocho de Chocolate">
+      <h3>Bizcocho de Chocolate</h3>
+      <p>S/12.00</p>
+      <button class="add-to-cart" data-id="28">Agregar</button>
+    </div>
+    <div class="item bizcochos card">
+      <img src="img/bizcocho-naranja.jpg" alt="Bizcocho de Naranja">
+      <h3>Bizcocho de Naranja</h3>
+      <p>S/11.00</p>
+      <button class="add-to-cart" data-id="29">Agregar</button>
+    </div>
+    <div class="item bizcochos card">
+      <img src="img/bizcocho-coco.jpg" alt="Bizcocho de Coco">
+      <h3>Bizcocho de Coco</h3>
+      <p>S/12.00</p>
+      <button class="add-to-cart" data-id="30">Agregar</button>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <section id="nosotros" class="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Panadería familiar con recetas tradicionales y pasión por el pan y la pastelería.</p>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h3>Contacto</h3>
+        <p>📞 987 654 321</p>
+        <p>📧 panaderiadelicia@gmail.com</p>
+      </div>
+      <div>
+        <h3>Redes</h3>
+        <p>Facebook · Instagram · WhatsApp</p>
+      </div>
+      <div>
+        <h3>Explora</h3>
+        <p>Inicio · Productos · Nosotros · Pedidos</p>
+      </div>
+    </div>
+    <p class="copy">&copy; 2025 Panadería PanComido. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Carrito flotante -->
+  <div id="cart-sidebar" class="cart-sidebar">
+    <h3>Tu Carrito</h3>
+    <div id="cart-items" class="cart-items">
+      <!-- Los productos del carrito aparecerán aquí -->
+    </div>
+    <div class="cart-total">
+      <p>Total: <span id="cart-total">S/0.00</span></p>
+      <button id="checkout-btn">Realizar Compra</button>
+    </div>
+    <button id="close-cart">×</button>
+    
+    <!-- Formulario de compra (oculto inicialmente) -->
+    <div id="checkout-form" class="checkout-form" style="display: none;">
+      <h3>Datos del Cliente</h3>
+      <form id="customer-form">
+        <div class="form-group">
+          <label for="customer-name">Nombres y Apellidos:</label>
+          <input type="text" id="customer-name" required>
+        </div>
+        <div class="form-group">
+          <label for="customer-address">Dirección:</label>
+          <input type="text" id="customer-address" required>
+        </div>
+        <div class="form-group">
+          <label for="customer-dni">DNI:</label>
+          <input type="text" id="customer-dni" required>
+        </div>
+        <div class="form-group">
+          <label>Método de Pago:</label>
+          <div class="payment-method">
+            <input type="radio" id="payment-card" name="payment" value="tarjeta" checked>
+            <label for="payment-card">Tarjeta</label>
+            <input type="radio" id="payment-cash" name="payment" value="efectivo">
+            <label for="payment-cash">Efectivo</label>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="button" id="back-to-cart">Volver al Carrito</button>
+          <button type="submit" id="confirm-purchase">Confirmar Compra</button>
+        </div>
+      </form>
+    </div>
+    
+    <!-- Resumen de compra (oculto inicialmente) -->
+    <div id="order-summary" class="order-summary" style="display: none;">
+      <h3>Resumen de tu Pedido</h3>
+      <div id="order-items"></div>
+      <div class="order-total">
+        <p>Total a pagar: <span id="order-total-amount">S/0.00</span></p>
+      </div>
+      <button id="close-order">Cerrar</button>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+  <!-- Modal de Login/Registro -->
+<div id="auth-modal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    
+    <div id="login-form">
+      <h3>Iniciar Sesión</h3>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="login-email">Email:</label>
+          <input type="email" id="login-email" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Contraseña:</label>
+          <input type="password" id="login-password" required>
+        </div>
+        <button type="submit" class="btn">Ingresar</button>
+      </form>
+      <p>¿No tienes cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+    </div>
+    
+    <div id="register-form" style="display: none;">
+      <h3>Registrarse</h3>
+      <form id="registerForm">
+        <div class="form-group">
+          <label for="register-nombre">Nombre Completo:</label>
+          <input type="text" id="register-nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="register-email">Email:</label>
+          <input type="email" id="register-email" required>
+        </div>
+        <div class="form-group">
+          <label for="register-password">Contraseña:</label>
+          <input type="password" id="register-password" required>
+        </div>
+        <div class="form-group">
+          <label for="register-direccion">Dirección:</label>
+          <input type="text" id="register-direccion" required>
+        </div>
+        <div class="form-group">
+          <label for="register-telefono">Teléfono:</label>
+          <input type="text" id="register-telefono" required>
+        </div>
+        <div class="form-group">
+          <label for="register-dni">DNI:</label>
+          <input type="text" id="register-dni" required>
+        </div>
+        <button type="submit" class="btn">Registrarse</button>
+      </form>
+      <p>¿Ya tienes cuenta? <a href="#" id="show-login">Inicia sesión aquí</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- User Info en Navbar -->
+<div id="user-info" style="display: none; margin-right: 25px;">
+  <span id="user-name"></span>
+  <a href="#" id="logout-btn" style="color: white; margin-left: 10px;">Cerrar sesión</a>
+</div>
+
+</body>
+</html>
